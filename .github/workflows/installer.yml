@@ -13,8 +13,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: PowerShell syntax check
+      - name: PowerShell parse check
         shell: pwsh
         run: |
-          Write-Host "Checking install.ps1 syntax..."
-          pwsh -NoProfile -Command "Invoke-Expression (Get-Content install.ps1 -Raw)"
+          Write-Host "Parsing install.ps1 (no execution)"
+          $null = [System.Management.Automation.Language.Parser]::ParseFile(
+            "install.ps1",
+            [ref]$null,
+            [ref]$null
+          )

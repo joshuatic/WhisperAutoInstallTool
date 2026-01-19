@@ -22,3 +22,12 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Generated Files
+generated/
+## Just in case to prevent leaks of transcription outputs
+.vtt
+.srt
+.txt
+.json
+.tsv

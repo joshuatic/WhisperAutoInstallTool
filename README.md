@@ -3,8 +3,7 @@
 A **Windows installer script** that prepares your system to run
 [OpenAI Whisper](https://github.com/openai/whisper).
 
-This tool **only installs prerequisites**.  
-It does NOT run Whisper for you.
+This tool **installs Whisper and its prerequisites and runs Whisper**.
 
 ---
 
@@ -36,6 +35,7 @@ Open **PowerShell** in the repo folder and run:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\install.ps1
 ```
+
 ## Licensing
 
 This project is licensed under the MIT License.
