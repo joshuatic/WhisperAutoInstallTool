@@ -18,8 +18,3 @@ jobs:
         run: |
           Write-Host "Checking install.ps1 syntax..."
           pwsh -NoProfile -Command "Invoke-Expression (Get-Content install.ps1 -Raw)"
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: install.ps1
