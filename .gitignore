@@ -1,0 +1,24 @@
+# PowerShell noise
+*.log
+
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE junk
+.idea/
+.vscode/
+.iml
+.xml
+
+# Temporary files
+*.tmp
+*.temp
