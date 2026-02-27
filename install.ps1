@@ -6,7 +6,7 @@ Write-Host "=== Whisper Auto Install Tool ==="
 # 1. Ensure Python 3.11 (fallback 3.10)
 # -------------------------------
 
-function Ensure-Python {
+function EnsurePython {
     param ([string]$Version)
 
     try {
@@ -17,11 +17,11 @@ function Ensure-Python {
     }
 }
 
-if (Ensure-Python "3.11") {
+if (EnsurePython "3.11") {
     $PY = "3.11"
     Write-Host "Python 3.11 detected"
 }
-elseif (Ensure-Python "3.10") {
+elseif (EnsurePython "3.10") {
     $PY = "3.10"
     Write-Host "Python 3.11 not found, using 3.10"
 }
